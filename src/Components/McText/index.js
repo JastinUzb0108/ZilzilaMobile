@@ -9,7 +9,7 @@ const McText = styled.Text`
   /* default left */
   text-align: ${props => props.align || 'left'};
   
-  ${({ regular, bold, semi, extra, black, medium }) => {
+  ${({ regular, bold, semi, extra, black, medium, secondary }) => {
     switch (true) {
       case regular: {
         return { fontFamily: Fonts.type.primary };
@@ -28,6 +28,9 @@ const McText = styled.Text`
       }
       case medium: {
         return { fontFamily: Fonts.type.medium };
+      }
+      case secondary: {
+        return { fontFamily: Fonts.type.secondary };
       }
     }
   }}

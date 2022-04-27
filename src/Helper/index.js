@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components'
 
 import { McText, McVectorIcon } from 'Components'
 
-const Helper = ({ navigation, navLink }) => {
+const Helper = ({ navigation, navLink, nav }) => {
     const theme = useTheme()
     return (
         <View style={[
@@ -18,7 +18,7 @@ const Helper = ({ navigation, navLink }) => {
                 color='#fff'
                 size={26}
                 onPress={() => {
-                    navigation.goBack()
+                    navigation.navigate(nav)
                 }}
             />
             <McText

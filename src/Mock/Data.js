@@ -1,3 +1,5 @@
+import React from 'react'
+import { Images } from 'Constants'
 export const page1 = {
     context: '',
     title: '1. Kuchli zilzila-tabiiy ofat, uning  kelib chiqish sabablari ',
@@ -19,7 +21,7 @@ export const page1 = {
 
 export const page2 = {
     context: 'Aholining barcha qatlamini kuchli zilzila bilan bog‘liq favqulodda vaziyatlardan muhofazalash bo‘yicha  ',
-    title: '2. ZILZILADAN OLDIN BAJARILADIGAN HARAKATLAR: ',
+    title: '2. Zilziladan oldin bajariladigan harakatlar ',
     description: [
         {
             descTitle: '2.1. Maktabgacha umumiy o‘rta maxsus professional va oliy ta’lim muassasalarida ta’lim oluvchilar: ',
@@ -138,7 +140,7 @@ export const page2 = {
 
 export const page3 = {
     context: '',
-    title: '3. ZILZILA VAQTIDA BAJARILADIGAN HARAKATLAR: ',
+    title: '3. Zilzila vaqtida bajariladigan harakatlar: ',
     description: [
         {
             descTitle: '3.1. Ta’lim muassasalarida: ',
@@ -241,7 +243,7 @@ export const page3 = {
 
 export const page4 = {
     context: '',
-    title: '4. ZILZILADAN KEYIN BAJARILADIGAN TO‘G‘RI HARAKATLAR: ',
+    title: '4. Zilziladan keyin bajariladigan to‘g‘ri harakatlar: ',
     description: [
         {
             descTitle: '4.1. Ta’lim muassasalarida: ',
@@ -469,35 +471,1259 @@ export const page4 = {
             text: 'Su’niy nafas – og‘izdan-og‘izga, og‘izdan-burunga hamda aralash (yosh bolalar va chaqaloqlarda) usullarda amalga oshiriladi.'
         }
     ],
-    blood: [
 
-    ]
+    blood: [
+        {
+            title: 'Qon ketishlarda birinchi tibbiy yordam ',
+            desc2: [
+                {
+                    text: 'Turli jarohatlar tashqi qon ketishiga sababchi bo‘lishi mumkin. Ular shikastlangan qon tomir turlariga qarab arterial, venoz va kapillyar turlarga bo‘linadi'
+                },
+                {
+                    text: 'Arterial qon ketishda qon favvora bo‘lib oqadi. Qisqa vaqt ichida ko‘p qon yo‘qotilishiga sabab bo‘ladi. Venoz qon ketishda esa jarohat sohasidan qon sizib (buloq shaklida) chiqadi, nisbatan kam qon yo‘qotiladi.'
+                },
+                {
+                    text: 'Ko‘p miqdorda qon ketishi qisqa vaqt ichida insonni og‘ir axvolga olib kelishi mumkin. Shu sababli darxol qon ketishni to‘xtatish choralari  ko‘rilishi kerак.'
+                }
+            ],
+            imgData: Images.img3
+        },
+        {
+            title: 'Birinchi yordam. ',
+            desc2: [
+                {
+                    text: 'Arterial qon ketishda qisqa vaqt ichida ko‘p miqdorda qon ketib qolishi mumkin. Shuning uchun zudlik bilan quyidagi qoidalar yordamida ketayotgan qonni to‘xtatish lozim: birinchi qoida – qon ketayotgan joyni ro‘molcha (latta) yordamida bosish, ikkinchi qoida – qon ketayotgan a’zoni (yoki a’zo qismini) tepaga ko‘tarish, uchinchi qoida – jabrlanganni yotqizish, to‘rtinchi qoida qon ketayotgan joydan tepa bo‘g‘imda arterial qon tomirini bosish (kaft bilan yoki biror jism bilan bo‘g‘im sohasiga bosiladi va a’zo bukiladi, shunda bu joydagi arterial qon tomir eziladi va bukiladi, natijada qon to‘xtaydi).                    '
+                },
+                {
+                    text: 'Ba’zi hollarda qon ketishini to‘xtatish uchun bilakdan (tirsakdan tepada) hamda sondan (tizzadan tepada) maxsus bog‘lam – jgut qo‘yiladi. Buning uchun maxsus rezina materiallardan (agar mavjud bo‘lmasa – ro‘mol, galstuk, kolgotka va boshqa vositalardan) foydalangan holda jarohatdan yuqorida bog‘lam hosil qilinadi. Bog‘lam qo‘yilgan vaqt belgilab qo‘yiladi. Jarohat sohasi atrofiga spirt, yod bilan ishlov berilib, imkon qadar toza mato, bint bilan bog‘lab qo‘yiladi va tibbiy muassasaga olib boriladi.                      '
+                },
+                {
+                    text: 'Venoz qon ketishlarda - jarohat soxasi  atrofi spirt, yod bilan ishlov berilib imkon qadar toza mato, bint bilan bog‘lam siqib qo‘yiladi.'
+                }
+            ],
+            imgData: Images.img4
+        },
+        {
+            title: 'Tayanch-harakat azolarining shikastlanishi ',
+            desc2: [
+                {
+                    text: 'Suyak butunligining biron qismi buzilishiga sinish deyiladi. Ko‘p hollarda suyaklarning sinishi unga tashqi kuchning bevosita yoki bilvosita ta’siri natijasida yuzaga keladi. '
+                },
+                {
+                    text: 'Teri butunligining buzilishiga qarab, sinishlar ochiq va yopiq turlarga bo‘linadi.                    '
+                }
+            ],
+            desc: [
+                {
+                    text: '⦁	Oyoq va qo‘llardagi shikastlar barcha shikastlanishlarning asosiy qismini tashkil etadi. '
+                },
+                {
+                    text: '⦁	Qo‘l-oyoqlarning lat yeyishlari nisbatan katta bo‘lmagan kuch ta’siri natijasida paydo bo‘lib, ular qon to‘planishi (gematoma) – shish, harakatning chegaralanishi, og‘riq va paypaslaganda og‘riqning kuchayishi bilan xarakterlanadi. '
+                },
+                {
+                    text: '⦁	Tayanch-harakat a’zolari shikastlanishida birinchi yordam quyidagi qoidalarga amal qilingan holda amalga oshiriladi:                     '
+                },
+                {
+                    text: '⦁	singan a’zoning harakatsizligini ta’minlash (buning uchun taxtakach qo‘yiladi);'
+                },
+                {
+                    text: '⦁	umurtqa pog‘onasi singanda barcha bo‘g‘inlarning, son suyagi singanda uchta bo‘g‘inning (to‘piq, tizza, tos-son), boshqa siniqlarda ikkita bo‘g‘inning harakatsizligini ta’minlash;'
+                },
+                {
+                    text: '⦁	singan joyga sovuq bosish (imkoni bo‘lgan hollarda);'
+                },
+                {
+                    text: '⦁	singan joyni ko‘tarib qo‘yish (taxtakachlab bo‘lgandan so‘ng). '
+                },
+            ],
+            imgData: Images.img3
+        },
+        {
+            title: 'Suyak sinishning belgilari: ',
+            desc2: [
+                {
+                    text: 'singan joyda keskin og‘riq, faoliyatning buzilishi (jabrlangan singan oyoq yoki qo‘ldan foydalana olmaydi), deformatsiya, ya’ni shakl o‘zgarishi, oyoq yoki qo‘l uzunligining qisqarganligi, uning notabiiy holati, ba’zida paypaslaganda g‘ichirlagan tovushning (krepitatsiyaning) eshitilishi. Ochiq turdagi sinishlarda jarohat, qon ketishi va ba’zan suyak parchalari ko‘zga tashlanib turadi.                     '
+                }
+            ]
+        },
+        {
+            title: 'Birinchi yordam. ',
+            desc2: [
+                { text: 'Yopiq turdagi sinishlarda shikastlangan a’zoning xarakati taxtakach (shina) yoki boshqa qo‘lbola vositalar bilan (karton, jurnal, taxta va h.k.) cheklanadi va shifoxonaga olib boriladi. ' },
+                { text: 'Singan sohada harakatni cheklash – og‘riqni kamaytirish, jarohat sohasida singan bo‘laklar boshqa qon tomir va nervlarga qo‘shimcha zarar yetkazmasligi uchun qilinadi.                 ' }
+            ]
+        },
+        {
+            title: 'Kuyish',
+            desc2: [
+                {
+                    text: 'Ko‘yish darajali:                    '
+                },
+                {
+                    text: '1 daraja –terining qizarishi, og‘riq, shish.                    '
+                },
+                {
+                    text: '2 daraja – qizarish, og‘riq, shishdan tashqari pufakchalarning paydo bo‘lishi.'
+                },
+                {
+                    text: '3 daraja – terining barcha qatlamlari kuyadi.                    '
+                },
+                {
+                    text: '4 daraja – teri, yumshoq to‘qimalar, ichki a’zolar va suyaklarning kuyishi.'
+                },
+            ],
+            desc: [
+                {
+                    text: 'Yuqori harorat ta’sirida to‘qimalarning shikastlanishi kuyish deb ataladi. Kuyishlar issiq suyuqliklar, bug‘, olov, qizdirilgan metallar ta’sirida kelib chiqishi mumkin.                    '
+                }
+            ],
+            imgData: Images.img6
+        },
+        {
+            title: 'Birinchi  yordam:            ',
+            desc2: [
+                {
+                    text: '- tezlik bilan omilni bartaraf etish - olovni o‘chirish, shikastlangan kishining yonayotgan kiyimlarini olib tashlash, uning ustiga nimanidir yopish, choyshab, jun ro‘mol, plash yordamida havo kirmaydigan qilib olovni o‘chirish, keyin tutayotgan narsalarni olib tashlash;                    '
+                },
+                {
+                    text: '- yong‘in binoda sodir bo‘lgan bo‘lsa, tezlik bilan hamma zarar ko‘rgan kishilarni toza havoga olib chiqish;'
+                },
+                {
+                    text: '- agar teriga kuygan kiyim qoldiqlari yopishib qolgan bo‘lsa, ularni ko‘chirib olmaslik. Jarohatlarni steril bint bilan bog‘lash, agar u bo‘lmasa, qalinroq matoni dazmollab ishlatish. Tananing ko‘p qismi kuyganda – steril (toza) choyshab bilan o‘rash;                    '
+                },
+                {
+                    text: '- kuygan joyni oqar suvda 15 minut davomida yuvib turish yoki sovuq narsa qo‘yish (bu og‘riqni qoldiruvchi ta’sir ko‘rsatadi va ayni vaqtda shokning oldini oladi) ;.'
+                },
+                {
+                    text: '- jabrlanuvchi hushida bo‘lsa – og‘riq qoldiruvchi dori va suyuqliklar ichirish.                    '
+                },
+            ],
+            boldText: 'Esda tutish kerak! Quyish paytida hosil bulgan pufakchalarni kesish, teshish, turli malxamlardan, qaymoq, yog‘lardan, qor va muzlardan, yod va spirtlardan foydalanish qat’iy ma’n etiladi!  ',
+            imgData: Images.img7
+        },
+        {
+            title: 'Uzoq ezilish sindromi (Krash-sindromi)',
+            desc2: [
+                {
+                    text: 'Kuchli zilzila oqibatida vayronalar ostida qolib ketgan jabrlanganlarda ko‘p uchraydigan favqulodda vaziyatlardan so‘ng inson tanasining, qo‘l va oyoqlarning og‘ir jismlar, metall qurilmalar tagida qolishi, qisib qolishi natijasida tana qismlarida qon aylanishining buzilishi va buning natijasida vaqt o‘tgan sari zaharli moddalar miqdorining ortib borishi xolatidir. Bunday hollarda ezib turgan jism to‘satdan olib tashlansa – to‘plangan zaharli moddalar butun tanaga tarqab og‘ir ahvolga – o‘tkir buyrak yetishmovchiligiga olib kelishi mumkin.                    '
+                }
+            ],
+        },
+        {
+            title: 'Belgilari: ',
+            desc2: [
+                {
+                    text: 'ezilgan qo‘l-oyoqlarning shishishi, bu joyda haroratning nisbatan pasayishi. Qon tomirlarda pulsning pastligi yoki umuman bo‘lmasligi.                    '
+                }
+            ],
+            imgData: Images.img8
+        },
+        {
+            title: 'Birinchi yordam : ',
+            desc2: [
+                {
+                    text: '– jabrlanganning qo‘l-oyoqlari qisilib turgan bo‘lsa, avvalo qisilgan joyning tepasi qisib bog‘lanadi va vaqt belgilab qo‘yiladi. Keyin tana a’zosi ozod qilinib, jaroxatlar bo‘lsa ishlov beriladi va bog‘lam qo‘yiladi. Taxtakach yoki qo‘lbola vositalar bilan harakati cheklanadi. Imkon qadar ezilgan qismi sovuq narsalar bilan o‘raladi. Jabrlangan hushida bo‘lsa - ko‘p suyuqliklar ichiriladi, og‘riqsizlantiruvchi dorilar bersa ham bo‘ladi. “Tez yordam” chaqiriladi yoki vaqt ketkizmay, davolash muassasasiga yuborish choralari ko‘riladi. '
+                },
+                {
+                    text: 'Zilzilalar oqibatida inson turli darajali stress xolatiga tushishi tabiyidir. Ushbu holatlar ayrim surinkali kasalliklarni xurujiga keltirishi mumkin.Jumladan yurak kasallik, bronxial astma, gipretonik krizlar, tutqanoqlar va hakazolar.'
+                }
+            ],
+            imgData: Images.img9
+        },
+        {
+            title: ' Yurak kasalligini xuruji',
+            desc2: [
+                {
+                    text: 'Yurak ishemik kasalligi (YUIK) yig‘ma tushuncha bo‘lib, uning asosida yurak toj arteriyalaridagi qon oqishi va shu bilan kislorod ta’minotining buzilishi natijasida kelib chiqadigan yurak muskuli kasalligi yotadi.                     '
+                },
+                {
+                    text: 'Belgilari. Ko‘proq 40–66 yoshdagilarda uchraydi va asosan og‘riqlar bilan kechadi. Bunday og‘riqlar, ko‘pincha, jismoniy zo‘riqish, hissiyotga berilish va ba’zan osoyishtalik holatlarida ham kelib chiqadi. Kuchli og‘riq, asosan, chap yelkaga, ko‘krak, bo‘yin, pastki jag‘ va tishlarga uzatiladi.'
+                },
+                {
+                    text: 'Ayni paytda bemor nafas olishga qiynaladi, xavotirga tushadi, harakatini to‘xtatib, og‘riq o‘tguncha qimirlamay qotib turadi. '
+                },
+                {
+                    text: 'Keksa yoshli odamlarda og‘riqni sezish kamroq yuz berib, kasallikning klinik belgilari nafas olishning qiyinlashishi, birdaniga havo yetishmay qolishi va kuchli darmonsizlik bilan kechadi.                     '
+                }
+            ],
+            imgData: Images.img10
+        },
+        {
+            title: 'Birinchi yordam:            ',
+            desc2: [
+                {
+                    text: '- to‘liq jismoniy va ruhiy tinchlikni ta’minlash;'
+                },
+                {
+                    text: '- kiyimlarini (galstuk, kamarni) bo‘shatish;                    '
+                },
+                {
+                    text: '- transport aptechkasidan til ostiga 1 dona validol tabletkasi qo‘yish;'
+                },
+                {
+                    text: '- davolash muasasaga yetkazish chorasini ko‘rish.                      '
+                },
+            ],
+            imgData: Images.img11
+        },
+        {
+            title: 'Bronxial astma ',
+            desc2: [
+                {
+                    text: '– nafas yo‘llar bronxlarning siqilishi (spazmi) natijasida kelib chiqadigan o‘tkir nafas yetishmovchiligi (bo‘g‘ilish). '
+                }
+            ]
+        },
+        {
+            title: 'Belgilari: ',
+            desc2: [
+                {
+                    text: 'bo‘g‘ilish, nafas olish tezlashib, nafas chiqarishning bir oz uzayishi. Quruq azobli yo‘tal, ba’zan avval ajralib turgan balg‘amning to‘xtab qolishi. Bo‘g‘ilish, odatda, uzoq davom etmaydi. Kasallik xuruji, ko‘pincha, to‘satdan, o‘tkir boshlanadi, bemorlar  kasallik boshlangan vaqtni soati va minutigacha aytib berishlari mumkin. Xuruj boshlanishidan oldin bo‘ladigan belgilarga tomoq qurishi, yo‘tal, tumov, terlash, vahima va terining qichishi kiradi. Xurujning davomiyligi bir necha minutdan bir necha sutkagacha (og‘ir turlarida) bo‘lishi mumkin. Bemorlar, ko‘pincha, majburiy holatga o‘tadilar – turgan yoki o‘tirgan holatda krovatni qo‘llari bilan ushlab, ko‘krak qafaslarini bir oz kerib, boshlarini maksimal orqaga egib, og‘zilarini katta ochib, havoni “yutishga” harakat qilishadi.                    '
+                }
+            ]
+        },
+        {
+            title: 'Birinchi  yordam.',
+            desc: [
+                {
+                    text: '1. Bemorni tinchlantirib, toza havo kelishini ta’minlash;'
+                },
+                {
+                    text: '2. Oyoqlarini issiq suvga solish;'
+                },
+                {
+                    text: '3. Maxsus aerozol vositalardan har 20 daqiqada 2-3 marta nafas olish;'
+                },
+                {
+                    text: '4. Xuruj o‘tib ketmasa, tibbiy muassasaga yetkazish chorasini ko‘rish.'
+                },
+            ],
+            imgData: Images.img12
+        },
+        {
+            title: 'EPILEPSIYA (tutqanoq kasalligi)',
+            desc2: [
+                {
+                    text: '- bosh miyaning surunkali kasalligi bo‘lib, asosan tutqanoq yoki tirishish xurujlari bilan kechadi. Bu kasallik birlamchi, ya’ni tug‘ma yoki ikkilamchi, ya’ni ba’zi bosh miya kasalliklari sababli rivojlanadi. '
+                },
+                {
+                    text: 'Epilepsiyaning o‘ziga xos tomoni ham shundaki, bemor xuruj payti nimalar bo‘lganini mutlaqo eslay olmaydi. Bu holat tibbiyotda tutqanoqdan keyingi amneziya (ya’ni eslay olmaslik) deb ataladi. Faqat bemor u yer-bu yeri shilingani yoki ko‘karganidan xuruj bo‘lganini bilib qolishi mumkin.'
+                }
+            ]
+        },
+        {
+            title: 'Belgilari: ',
+            desc2: [
+                {
+                    text: 'odam to‘satdan muvozanatni yo‘qotib yiqiladi, qo‘l-oyoklari tirishishni boshlaydi, og‘zidan ko‘pik keladi, hushida bo‘lmaydi. Boshi orqa tarafga tortiladi. Yurak urishi tezlashadi.  '
+                }
+            ]
+        },
+        {
+            title: 'Birinchi yordam: ',
+            desc2: [
+                {
+                    text: '“Tajribali” bemorlar yonida bosqichma-bosqich yordam berish tartibi ko‘rsatilgan eslatma olib yurishadi. '
+                },
+                {
+                    text: 'Tutqanoq xuruji yuz bergan payt birinchi navbatda bemorni tekis, jarohat yetmaydigan joyga yotqizish va boshini yon tomonga (o‘ngga yoki chapga) burib turish zarur. Bemorning tishlari orasiga qo‘l yoki boshqa narsa tiqish kerak emas. Aks holda bemorning tishlari sinishi yoki qo‘lingizga jarohat yetishi mumkin. Xuruj binoning ichida sodir bo‘lsa – toza havo kelishi ta’minlanadi. Bemorning bosh tomonidan kelib boshini ushlab olish kerak, chunki, u o‘zi bilmagan holda boshini yerga urishi mumkin. Bemorning qo‘lida biror narsa bo‘lsa uni chetga olib quyish kerak. Kiyim (sharf, galstuk, ro‘mol)ni bo‘shatib qo‘yish, ko‘zoynaklarini olib quyish kerak. Bemor tilini tishlab olmasligi uchun bemorga ro‘molchani tishlatib qo‘yish kerak.                     '
+                },
+                {
+                    text: 'Unutmaslik kerakki, tutqanoq xuruji odatda bir daqiqada, uzog‘i bilan uch daqiqada o‘tib ketadi. '
+                },
+                {
+                    text: 'Xuruj paytida quydagilar mumkin emas:'
+                }
+            ],
+            desc: [
+                {
+                    text: '⦁	Qo‘shimcha jarohat yetkazmaslik uchun bemorning og‘zini qattiq jismlar, xususan, temir bilan ochmaslik.'
+                },
+                {
+                    text: '⦁	Bemorni yolg‘iz qoldirish.'
+                },
+                {
+                    text: '⦁	Yuziga suv sepish, shapatilash, turtish.'
+                },
+                {
+                    text: '⦁	Bemorga nisbatan kuch ishlatish.                    '
+                },
+                {
+                    text: '⦁	Suv, dori ichkizish.                    '
+                }
+            ],
+            imgData: Images.img13
+        },
+        {
+            title: 'INSULT',
+            desc2: [
+                {
+                    text: '- bosh miya qon aylanishining o‘tkir buzilishi.  Bu xolatga, bosh miya qon tomirlarni tiqilib yoki siqilib qolishi,  arterial qon bosimi keskin ko‘tarilishi natijasida qon tomirlarni yorilishi sabab bo‘ladi'
+                },
+            ],
+            imgData: Images.img14
+        },
+        {
+            title: 'Belgilari: ',
+            desc2: [
+                {
+                    text: '⦁	butun tananing holsizlanishi, sezuvchanlikning pasayishi, nutqning buzilishi, bosh aylanishi, bir tarafda qo‘l-oyoqlarning kuchsizlanishi, kuchli bosh og‘rig‘.                     '
+                },
+                {
+                    text: '⦁	Tibbiy xodimlar yoki qutqaruvchilar yetib kelgunga qadar bemorga birinchi yordam ko‘rsatiladi. Bunda:'
+                },
+                {
+                    text: '⦁	Bemorni tekis joyga yotqizish va boshini ko‘tarib quyish. Bemalol nafas olishi uchun sharoit yaratish (xonada bo‘lsa - oynalarni ochish, nafas erkin bo‘lishi uchun yoqalarni, ro‘mol, sharf, galstuklarni bo‘shatish yoki olib tashlash, tish protezlarini olish). Boshiga sovuq narsa (masalan, ho‘llangan sochiq) qo‘yish. Bemorning ko‘ngli aynisa boshini yon tomonga burish yoki yonboshlatib qo‘yish va og‘zini tozalab turish. Imkon darajasida qon bosimini o‘lchab turish va uning miqdorini va o‘lchangan vaqtini yozib qo‘yish (tibbiy xodimlar kelganda ular ko‘rsatiladi). Oyog‘iga issiq narsa (grelka (idish) qo‘yish).'
+                },
+                {
+                    text: '⦁	Nafas olishi va yurak faoliyatini nazoratga olish va nafasi to‘xtasa- su’niy nafas berish, yurak faoliyati to‘xtasa – yurakni massaj qilish va h.k.z.'
+                },
+            ]
+        },
+    ],
 }
 
 export const page5 = {
-    context: '5. O‘zbekiston Respublikasining umumiy seysmik rayonlashtirish  XARITASI ',
-    title: '',
+    title: '5. O‘zbekiston Respublikasining umumiy seysmik rayonlashtirish xaritasi ',
     description: [
         {
-            descTitle: '',
-            descContext: [
-                {
-                    text: ''
-                }
-            ]
+            text: 'Ma’lumki, butun dunyo miqyosida sodir bo‘ladigan tabiiy ofatlar orasida kuchli zilzila o‘zining ayanchli oqibatlari, jiddiy talofotlari bilan ajralib turadi. Chunki, tabiatning ushbu hodisasi bir necha soniya ichida yuzlab, minglab insonlarning qurbon bo‘lishiga va juda katta miqdorda iqtisodiy zararga olib kelishi mumkin.  '
+        },
+        {
+            text: 'O‘zbekiston geologik joylashuviga ko‘ra, O‘zbekiston Respublikasi hududi O‘rtayer dengizi-Osiyo seysmik kamarida joylashgan. Shu boisdan,  respublikamiz va unga chegaradosh hududlarda tez-tez zilzilalar sodir bo‘lib turishi tabiiy hol sanaladi. Ta’kidlash kerakki, respublikamiz hududlarida 1900 yildan beri shu kunga qadar 30 dan ortiq kuchli va halokatli (magnitudasi 5 dan yuqori bo‘lgan) zilzilalar sodir bo‘lgan. Masalan, 1966 yil 26 apreldagi “Toshkent” zilzilasi, 2011 yil 20 iyuldagi Farg‘ona zilzilasi va x.k.z.lar shular jumlasidandir.'
+        },
+        {
+            text: 'Fanlar akademiyasi Seysmologiya instituti tomonidan 2017 yilda tuzilgan umumiy seysmik rayonlashtirish xaritasiga muvofiq (1-rasm), O‘zbekiston hududida sodir bo‘lishi mumkin bo‘lgan zilzilalarning ta’sir kuchi G‘arbdan Sharqqa qarab 5 balldan 9 ballgacha bo‘lishi mumkin. Mazkur xaritada MSHK shkalasi bo‘yicha ballar besh xil rangda ko‘rsatilgan.O‘zbekiston geologik jihatdan seysmik faol Markaziy Osiyo mintaqasida joylashganligi sababli, xududlarimizda xaritada ko‘rsatilgan ballarda  '
+        },
+        {
+            text: 'Mazkur umumiy seysmik rayonlashtirish xaritasi uzoq muddatli seysmik prognoz sifatida qabul qilish mumkin. Shu boisdan mamlakatimizning seysmik faol hududlarida yashaydigan fuqarolar millatidan qat’iy nazar zilziladan oldin, zilzila vaqtida va zilziladan keyin bajariladigan to‘g‘ri harakatlar  o‘rganib borilishi  maqsadga muvofiq hisoblanadi. '
+        },
+        {
+            text: 'Shu bilan birga, uzoq muddatli seysmik prognozga muvofiq, kuchli zilzilalarning yuzaga kelishi mumkin bo‘lgan xavfini inobatga olgan holda, Favqulodda vaziyatlarning oldini olish va bunday vaziyatlarda harakat qilish davlat tizimi (keyingi o‘rinlarda – FVDT)ga kiruvchi vazirlik va idoralar hamda ularning tasarrufidagi obyektlarda uzoq (1-10 yil), o‘rta (1-12 oy) va qisqa (1-30 sutka) muddatli zilzila prognozlariga muvofiq seysmik xavfsizlikni ta’minlash bo‘yicha ko‘riladigan profilaktik chora-tadbirlar kompleksi hamda prognoz ma’lumotlari olinganda hududlar kesimida tayyorgarligi oshiriladigan yoki kuchaytiriladigan tuzilmalar, kuch va vositalarning oldindan  tayyorgarlik ko‘rishi hamda kuchli zilziladan so‘ng favqulodda vaziyat hududiga tezkorlik bilan kirishi mamlakatda yuzaga kelishi mumkin talofotlarni minimallashtirish imkoniyatini yaratadi. '
+        },
+        {
+            text: 'Ma’lumki amaldagi qonunchilikka muvofiq, O‘zbekiston Respublikasi Favqulodda vaziyatlar vazirligi FVDT faoliyatini boshqarish va davlat nazoratini amalga oshirish funksiyasini bajaradi. '
+        },
+        {
+            text: 'Favqulodda vaziyatlar vazirligi tomonidan Fanlar akademiyasidan mamlakat hududida kuchli zilzilalarning muddatli prognozlari (uzoq, o‘rta va qisqa muddatli) olinganda, kuchli zilzilalar bilan bog‘liq favqulodda vaziyatlar xavfi to‘g‘risida aholining barcha qatlamini va FVDTga kiruvchi funksional xizmatlarni xabardor qilish tashkillashtiriladi. '
+        },
+        {
+            text: 'Kuchli zilzilalarning o‘zi favqulodda vaziyatlar sifatida qayd etilib, uning oqibatida boshqa turdagi tabiiy, texnogen va ekologik xususiyatli favqulodda vaziyatlar ham yuzaga kelishi mumkin.  Xususan, aholi turar-joy binolari, ijtimoiy obyektlarda va tashkilotlar tasarrufidagi bino va inshootlarda bino va inshootlarning kuchli zilzila oqibatida qulashi bilan bog‘liq, shuningdek iqtisodiy o‘ta muhim va toifalangan obyektlarda, energetika va kommunal tizimlarda avariya, yong‘in va portlashlar bilan bog‘liq ikkilamchi favqulodda vaziyatlar shular jumlasidandir. '
+        },
+        {
+            text: 'Yirik favqulodda vaziyatlar oqibatlarini bartaraf etish borasidagi ilg‘or xorij tajribasi shuni ko‘rsatadiki, ularning oldini olish chorasini ko‘rish va bunga erishish, sodir bo‘lganda oqibatlarini bartaraf etishga qaraganda iqtisodiy jihatdan tejamli va samarali hisoblanadi. '
+        },
+        {
+            text: 'Shu boisdan, respublikada aholi va hududlarni seysmik xavfsizligini ta’minlash maqsadida, zilziladan oldin aholining barcha qatlami, shu jumladan fuqarolar tomonidan zilziladan oldin, zilzila vaqtida va zilziladan keyin amalga oshiriladigan harakatlar algoritmi o‘rganiladi, FVDT funksional xizmatlari tomonidan esa kuchli zilzilalarning muddatli prognozlariga muvofiq tegishli chora-tadbirlar kompleksi rejalashtiriladi va amalga oshiriladi. '
         }
     ]
 }
 
 export const page6 = {
-    context: '',
-    title: '',
-    description: [
+    title: '\t Fuqarolaning zilzilaga tayyorgarlik darajasinini baxolash uchun testlar ',
+    context: 'Aholining zilzilaga tayyorgarlik darajasini baholab bo‘yicha',
+    title2: 'TEST SAVOLLARI',
+    tests: [
         {
-            descTitle: '',
-            descContext: [
+            answare: 'Favqulodda vaziyatga olib keluvchi geologik xavfli hodisalarni ko‘rsating:',
+            variant: [
                 {
-                    text: ''
+                    item: 'Zilzila, yer ko‘chkisi va tog‘ o‘pirilishlari',
+                    i: true
+                },
+                {
+                    item: 'Zilzila, yer  va qor ko‘chkilari ',
+                    i: false
+                },
+                {
+                    item: 'Yer ko‘chkisi, qor ko‘chkisi, sunami ',
+                    i: false
+                },
+                {
+                    item: ' Zilzila, sunami, yer ko‘chkisi ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila nima? ',
+            variant: [
+                {
+                    item: 'Yer ichki harakatlari natijasida uning yuzasida paydo bo‘ladigan tebranma harakat ',
+                    i: true
+                },
+                {
+                    item: 'Yer osti zarbasi yuzaga kelgan joy ',
+                    i: false
+                },
+                {
+                    item: 'Qayta-qayta takrorlanuvchi tebranishlar ',
+                    i: false
+                },
+                {
+                    item: 'Tabiat hodisasi',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer qobig‘ining tebranishlarini o‘rganadigan fan qanday nomlanadi? ',
+            variant: [
+                {
+                    item: 'Seysmologiya',
+                    i: true
+                },
+                {
+                    item: 'Etologiya',
+                    i: false
+                },
+                {
+                    item: 'Sotsiologiya',
+                    i: false
+                },
+                {
+                    item: 'Ekologiya',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer yuzasi tebranishlarini yozish uchun mo‘ljallangan qurilma qanday nomlanadi? ',
+            variant: [
+                {
+                    item: 'Seysmograf',
+                    i: true
+                },
+                {
+                    item: 'Etnograf',
+                    i: false
+                },
+                {
+                    item: 'Xronograf',
+                    i: false
+                },
+                {
+                    item: 'Sotsiograf',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'MSK-64 seysmik shkalasi qachon tavsiya etilgan va qaysi olimlar tomonidan takomillashtirish asosida tuzilgan? ',
+            variant: [
+                {
+                    item: '. 1964 yilda Parijda o‘tkazilgan YUNESKO yig‘ilishida, S.Medvedev (SSSR), V.Shponxoyyer (Germaniya), V.Karnik (Chexoslovakiya)',
+                    i: true
+                },
+                {
+                    item: ' Nyuton V., Lomonosov V. ',
+                    i: false
+                },
+                {
+                    item: 'Abdulabekov Q., Mavlonov N. ',
+                    i: false
+                },
+                {
+                    item: 'Kobe, Shidu ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzilalar kelib chiqish sabablariga ko‘ra qanaqa turlarga bo‘linadi? ',
+            variant: [
+                {
+                    item: 'Tektonik, vulqon va o‘pirilish ',
+                    i: true
+                },
+                {
+                    item: ' Kuchki, Sunami ',
+                    i: false
+                },
+                {
+                    item: 'Sel, Suv toshqini ',
+                    i: false
+                },
+                {
+                    item: 'Vulkon, Kuchki',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzilaning tayyorgarlik jarayoni geofizik modeli kim tomonidan ishlab chiqilgan? ',
+            variant: [
+                {
+                    item: ' Abdullabekov ',
+                    i: true
+                },
+                {
+                    item: 'Qari-Niyaziy ',
+                    i: false
+                },
+                {
+                    item: 'Mavlonov ',
+                    i: false
+                },
+                {
+                    item: 'Ibragimov Sh. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Seysmik rayonlashtirish xaritasini tuzishdan maqsad nima? ',
+            variant: [
+                {
+                    item: 'Qurilish meyorlarini belgilash uchun ',
+                    i: true
+                },
+                {
+                    item: 'Xavfsizlikga ega',
+                    i: false
+                },
+                {
+                    item: 'Chiroyli bulishi uchun ',
+                    i: false
+                },
+                {
+                    item: 'Geografiyadan dars berishi uchun',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Dunyoda birinchi seysmoskop qachon va kim tomonidan yaratilgan ',
+            variant: [
+                {
+                    item: ' 132 yilda Xitoy olimi Chjen Xen tomonidan ',
+                    i: true
+                },
+                {
+                    item: 'Abdulabekov Q.N. ',
+                    i: false
+                },
+                {
+                    item: 'Mavlonov  ',
+                    i: false
+                },
+                {
+                    item: 'Golitsin B. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Uyda yolg‘iz o‘tirgan vaqtingizda birdaniga qandil va deraza oynalari zirillay boshladi, javonlardagi idishlar pastga otildi. Sizning harakatingiz? ',
+            variant: [
+                {
+                    item: 'Eshik oralig‘iga turib olish ',
+                    i: true
+                },
+                {
+                    item: 'Qarindoshlaringizga voqea to‘g‘risida qo‘ng‘iroq qilish ',
+                    i: false
+                },
+                {
+                    item: 'Derazadan pastga sakrash ',
+                    i: false
+                },
+                {
+                    item: 'Baland ovozda yordamga chaqirish ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: ' Zilzila vaqtida bino ichida berkinish uchun eng qulay joy qayerda? ',
+            variant: [
+                {
+                    item: 'Mahkam turgan stol osti, krovatlar yoni, tayanch ichki devorlar oralig‘i, tayanch devorlar hosil qilgan burchaklar, eshik oraliqlari ',
+                    i: true
+                },
+                {
+                    item: 'Deraza tokchasi osti, shkaflar ichi ',
+                    i: false
+                },
+                {
+                    item: 'Shamollatish shaxtalari, ko‘p ќavatli uylarning ayvonlari ',
+                    i: false
+                },
+                {
+                    item: ' Lift va zinalar  ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila yuz bergan vaqtda shahar ko‘chasida bo‘lsangiz qanday harakat qilasiz? ',
+            variant: [
+                {
+                    item: 'Uylardan uzoqroqqa, xiyobon va keng ko‘chalar tomon yo‘l olish  ',
+                    i: true
+                },
+                {
+                    item: 'Biror bir harakat qilish shart emas ',
+                    i: false
+                },
+                {
+                    item: 'Xohlagan binoda berkinish ',
+                    i: false
+                },
+                {
+                    item: ' Panajoyi mavjud korxona, zavodlar tomon yo‘l olish',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzilaga tayyorgarlik kurish uchun qanday reja tuziladi? ',
+            variant: [
+                {
+                    item: 'Zilziladan oldin, Zilzila paytida, zilziladan so‘ng. ',
+                    i: true
+                },
+                {
+                    item: 'Evakuatsiya yullarni belgilash ',
+                    i: false
+                },
+                {
+                    item: ' Ochiq joylarni belgilash',
+                    i: false
+                },
+                {
+                    item: ' Zaxira suv tayyorlash.',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila vaqtida bino ichida berkinish uchun eng qulay joy qayerda? ',
+            variant: [
+                {
+                    item: 'Mahkam turgan stol osti, karovatlar yoni, tayanch ichki devorlar oralig‘i, tayanch devorlar hosil qilgan burchaklar, eshik oraliqlari. ',
+                    i: true
+                },
+                {
+                    item: ' Deraza tokchasi osti, shkaflar ichi. ',
+                    i: false
+                },
+                {
+                    item: 'Shamollatish shaxtalari, ko‘p qavatli uylarning ayvonlari. ',
+                    i: false
+                },
+                {
+                    item: 'Lift va zinalar. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila nima? ',
+            variant: [
+                {
+                    item: 'Yer ichki harakatlari natijasida uning yuzasida paydo bo‘ladigan tebranma harakat. ',
+                    i: true
+                },
+                {
+                    item: ' Yer osti zarbasi yuzaga kelgan joy. ',
+                    i: false
+                },
+                {
+                    item: 'Namgarchilik tufayli og‘irlik kuchi ta’sirida tog‘ jinslarining yonbag‘ir bo‘ylab pastga tomon siljishi. ',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob B. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila vaqtida ahvoli og‘irlashgan odamga 1-yordam kursatish nimadan boshlanadi? ',
+            variant: [
+                {
+                    item: 'Vaziyatni baxolashdan  ',
+                    i: true
+                },
+                {
+                    item: 'Yerga yotkizishdan ',
+                    i: false
+                },
+                {
+                    item: 'Xushiga keltirishdan ',
+                    i: false
+                },
+                {
+                    item: 'Tez yordam chakirishdan ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila vaqtida jarohatlangan odamga qon to‘xtatuvchi bog‘lam (jgut) qancha muddatga qo‘yiladi?  ',
+            variant: [
+                {
+                    item: ' 1 soatga. ',
+                    i: true
+                },
+                {
+                    item: '2 soatga. ',
+                    i: false
+                },
+                {
+                    item: '1,5 soatga. ',
+                    i: false
+                },
+                {
+                    item: '2 - 2,5 soatga. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Sirena xabar berish signali nima ma’noni anglatadi? ',
+            variant: [
+                {
+                    item: '“Diqqat barchaga!” ',
+                    i: true
+                },
+                {
+                    item: '“Suv toshqini!”',
+                    i: false
+                },
+                {
+                    item: '“Kimyoviy zaharlanish xavfi!” ',
+                    i: false
+                },
+                {
+                    item: '“Radiatsiyaviy zaharlanish xavfi!” ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila bilan bog‘liq favqulodda vaziyat hududida jabrlanuvchilarni qutqarish va ularga birinchi tibbiy yordam ko‘rsatish ishlari kim tomonidan olib boriladi? ',
+            variant: [
+                {
+                    item: 'Favqulodda vaziyat hududiga jalb etilgan tibbiy xodimlar, qutqaruvchilar, tuzilmalar, ishchi-xizmatchilar, talabalar va aholi tomonidan. ',
+                    i: true
+                },
+                {
+                    item: 'Favqulodda vaziyat hududiga jalb etilgan tibbiy xodimlar va qutqaruvchilar tomonidan. ',
+                    i: false
+                },
+                {
+                    item: 'Tibbiyot xodimlari tomonidan. ',
+                    i: false
+                },
+                {
+                    item: 'Qutqaruvchilar tomonidan. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Stress nima? ',
+            variant: [
+                {
+                    item: 'Hayvon va inson organizmida turli noxush omillar (stressorlar) ta’siriga javoban yuzaga keluvchi fiziologik himoya reaksiyalari majmui. ',
+                    i: true
+                },
+                {
+                    item: 'Insonni shodu-xurramlikka tushiruvchi holat. ',
+                    i: false
+                },
+                {
+                    item: 'Xavf-xatarni sezish, xavfsirash holati. ',
+                    i: false
+                },
+                {
+                    item: 'Nazoratdan chiqib ketgan qo‘rquv.',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Geologik xavfli hodisalarga qaysi favqulodda vaziyatlar turlari kiradi? ',
+            variant: [
+                {
+                    item: ' Zilzila, yer ko‘chkisi va tog‘ o‘pirilishlari.',
+                    i: true
+                },
+                {
+                    item: 'Zilzila, sunami, yer ko‘chkisi. ',
+                    i: false
+                },
+                {
+                    item: 'Zilzila, yer  va qor ko‘chkilari.',
+                    i: false
+                },
+                {
+                    item: 'Zilzila, sunami, yer ko‘chkisi. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Uyda yolg‘iz o‘tirgan vaqtingizda birdaniga qandil va deraza oynalari zirillay boshladi, javonlardagi idishlar pastga otildi. Siz tezlikda? ',
+            variant: [
+                {
+                    item: 'Eshik oralig‘iga turib olasiz. ',
+                    i: true
+                },
+                {
+                    item: 'Qarindoshlaringizga voqea to‘g‘risida qo‘ng‘iroq qila boshlaysiz.',
+                    i: false
+                },
+                {
+                    item: 'Derazadan pastga sakraysiz.',
+                    i: false
+                },
+                {
+                    item: 'Baland ovozda yordamga chaqira boshlaysiz.',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: ' Insonni tabiiy ofatlardan muhofaza qiluvchi qanday usullar mavjud? ',
+            variant: [
+                {
+                    item: 'Tabiiy ofat to‘g‘risida o‘z vaqtida ishonchli va haqqoniy axborot berish. ',
+                    i: true
+                },
+                {
+                    item: 'Maxsus kiyim-kechak bilan ta’minlash. ',
+                    i: false
+                },
+                {
+                    item: 'Qutqaruv asbob-anjomlari sotib olish. ',
+                    i: false
+                },
+                {
+                    item: 'Tabiiy ofatdan muhofaza qilib bo‘lmaydi. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila sabablaridan birini ko‘rsating: ',
+            variant: [
+                {
+                    item: 'Yer qobig‘i plitalarining o‘zaro ta’sirlashuvi. ',
+                    i: true
+                },
+                {
+                    item: 'Tog‘ jinslaridagi to‘lqin tebranishlari. ',
+                    i: false
+                },
+                {
+                    item: 'Tektonik yoriqlar zonasida tozalash inshootlarini qurish.',
+                    i: false
+                },
+                {
+                    item: 'Ob-havo injiqliklari.',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: ' Yaqinlashib kelayotgan zilzila darakchilaridan biri: ',
+            variant: [
+                {
+                    item: 'Yaqin atrofdagi elektr simlarining nurlanishi, avval kuzatilmagan joylarda gaz hidining sezilishi. ',
+                    i: true
+                },
+                {
+                    item: 'Ob-havoning keskin o‘zgarishi. ',
+                    i: false
+                },
+                {
+                    item: 'Elektr tarmog‘idagi qisqa tutashuv. ',
+                    i: false
+                },
+                {
+                    item: 'Ќandillarning tebranishi. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Agar zilzilaning birinchi  silkinishlari yuz bergan damda maktabda bo‘lsangiz, qanday harakat qilish kerak?',
+            variant: [
+                {
+                    item: 'O‘qituvchining ko‘rsatmasini kutish kerak. ',
+                    i: true
+                },
+                {
+                    item: 'Darslardan qochish kerak. ',
+                    i: false
+                },
+                {
+                    item: 'Ko‘chaga qochib chiqish kerak. ',
+                    i: false
+                },
+                {
+                    item: 'Televideniye orqali beriladigan xabarni kutish kerak. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'ilzila yuz bergan vaqtda shahar ko‘chasida bo‘lsangiz qanday harakat qilasiz? ',
+            variant: [
+                {
+                    item: 'Uylardan uzoqroqqa, xiyobon va keng ko‘chalar tomon yo‘l olish kerak. ',
+                    i: true
+                },
+                {
+                    item: 'Biror bir harakat qilish kerak emas. ',
+                    i: false
+                },
+                {
+                    item: 'Xohlagan binoda berkinish mumkin. ',
+                    i: false
+                },
+                {
+                    item: 'Panajoyi mavjud korxona, zavodlar tomon yo‘l olish kerak. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer qobig‘ining tebranishlarini o‘rganadigan fan qanday nomlanadi? ',
+            variant: [
+                {
+                    item: 'Seysmologiya',
+                    i: true
+                },
+                {
+                    item: 'Etologiya',
+                    i: false
+                },
+                {
+                    item: 'Sotsiologiya',
+                    i: false
+                },
+                {
+                    item: 'Ekologiya',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer yuzasi tebranishlarini yozish uchun mo‘ljallangan qurilma qanday nomlanadi?',
+            variant: [
+                {
+                    item: 'Seysmograf.',
+                    i: true
+                },
+                {
+                    item: 'Etnograf.',
+                    i: false
+                },
+                {
+                    item: 'Xronograf.',
+                    i: false
+                },
+                {
+                    item: 'Sotsiograf',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Nima deb o‘ylaysiz zilzila yuz berganda birinchi silkinishlardan so‘ng qayta silkinishlar bo‘lishi mumkinmi? ',
+            variant: [
+                {
+                    item: 'Ha',
+                    i: true
+                },
+                {
+                    item: 'Yo‘q',
+                    i: false
+                },
+                {
+                    item: 'Bu to‘g‘risida o‘ylab ko‘rmaganman. ',
+                    i: false
+                },
+                {
+                    item: 'Bilmayman. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Vayron bo‘lgan bino bo‘laklari ostida qolsangiz o‘zingizni qanday tutishingiz kerak? ',
+            variant: [
+                {
+                    item: 'Baqirish va yordamga chaqirish kerak. ',
+                    i: true
+                },
+                {
+                    item: 'Qo‘rquvga yengilish kerak emas. ',
+                    i: false
+                },
+                {
+                    item: 'Yordam kelishiga ishonish kerak emas. ',
+                    i: false
+                },
+                {
+                    item: 'Shaxsan biror nima qilish kerak emas. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: ' Aholiga xabar berish qaysi aloqa va xabar berish vositalar orqali amalga oshiriladi? ',
+            variant: [
+                {
+                    item: 'Telefon, radiotelefonlar, televideniye va radiokanallari orqali. ',
+                    i: true
+                },
+                {
+                    item: 'Simli va simsiz aloqa vositalari orqali. ',
+                    i: false
+                },
+                {
+                    item: 'Telefon va uyali telefonlar orqali. ',
+                    i: false
+                },
+                {
+                    item: 'Televideniye va radio kanallari orqali. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila vaqtida aholini evakuatsiya qilishni rejalashtirish, tashkil qilish va o‘tkazish kimga yuklatilgan?',
+            variant: [
+                {
+                    item: 'Evakuatsiya organlariga. ',
+                    i: true
+                },
+                {
+                    item: 'Tibbiy organlarga. ',
+                    i: false
+                },
+                {
+                    item: 'Mahalla qo‘mitasiga. ',
+                    i: false
+                },
+                {
+                    item: 'Jamoat tartibini saqlash organlariga ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Tabiiy tusdagi favqulodda vaziyatlar qaysi guruhlarga ajratiladi? ',
+            variant: [
+                {
+                    item: 'Geologik xavfli hodisalar, gidrometeorologik xavfli hodisalar, favqulodda epidemiologik, epizootik va epifitotik vaziyatlar. ',
+                    i: true
+                },
+                {
+                    item: 'Geologik xavfli hodisalar, gidrometeorologik xavfli hodisalar. ',
+                    i: false
+                },
+                {
+                    item: 'Quruqlik va gidrosfera holatining o‘zgarishi bilan bog‘liq vaziyatlar. ',
+                    i: false
+                },
+                {
+                    item: 'Gidrometeorologik xavfli hodisalar, gidrosfera holatining o‘zgarishi bilan bog‘liq vaziyatlar. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila sodir bo‘lgan joy qanday nomlanadi? ',
+            variant: [
+                {
+                    item: 'to‘g‘ri javoblar A va B ',
+                    i: true
+                },
+                {
+                    item: 'Gipotsentr',
+                    i: false
+                },
+                {
+                    item: ' Zilzila o‘chog‘i',
+                    i: false
+                },
+                {
+                    item: 'Epitsentr',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzila epitsentri nima? ',
+            variant: [
+                {
+                    item: 'Gipotsentrning yer yuzasidagi proyeksiyasi ',
+                    i: true
+                },
+                {
+                    item: 'Zilzila o‘chog‘i ',
+                    i: false
+                },
+                {
+                    item: 'Epitsentr va gipotsentr orasidagi masofa ',
+                    i: false
+                },
+                {
+                    item: 'Barcha javoblar to‘g‘ri ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzilaning chuqurligi nima? ',
+            variant: [
+                {
+                    item: 'Epitsentr va gipotsentr orasidagi masofa ',
+                    i: true
+                },
+                {
+                    item: 'Gipotsentrning yer yuzasidagi proyeksiyasi ',
+                    i: false
+                },
+                {
+                    item: 'Zilzila o‘chog‘i ',
+                    i: false
+                },
+                {
+                    item: 'Barcha javoblar to‘g‘ri ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer qatlamlarini sanab bering ',
+            variant: [
+                {
+                    item: ' Qobiq, mantiya va yadro ',
+                    i: true
+                },
+                {
+                    item: 'Atmosfera, Litosfera ',
+                    i: false
+                },
+                {
+                    item: 'Gidrosfera, Ionasfera ',
+                    i: false
+                },
+                {
+                    item: 'Barcha javoblar to‘g‘ri ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Tabiatda necha turdagi zilzilalar mavjud? ',
+            variant: [
+                {
+                    item: 'Uch turdagi: tektonik, vulkanik va o‘pirilma. ',
+                    i: true
+                },
+                {
+                    item: 'Ikki turdagi: Mobilistik va fiksistik. ',
+                    i: false
+                },
+                {
+                    item: 'Ikki turdagi: tektonik, vulkanik ',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob B. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Yer sharidagi seysmik kamarlarni sanab bering ',
+            variant: [
+                {
+                    item: 'Uchta: Tinch okeani, O‘rta yer dengizi-Osiyo, Atlantika okeanining o‘rtasida joylashgan suv osti tog‘ tizmalari seysmik kamarlari. ',
+                    i: true
+                },
+                {
+                    item: 'Ikkita: Tinch okeani, O‘rta yer dengizi ',
+                    i: false
+                },
+                {
+                    item: 'Bitta: Tinch okeani. ',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob V. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'O‘zbekistonda zilzila kuchini o‘lchash shkalalarini sanab bering. ',
+            variant: [
+                {
+                    item: 'Rixter, Medvedeyev-Shpanxoyer-Karnik (MSHK-64). ',
+                    i: true
+                },
+                {
+                    item: 'Mobilistik va fiksistik. ',
+                    i: false
+                },
+                {
+                    item: 'Tektonik, vulkanik ',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob B. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Zilzilalar sodir bo‘lish chuqurliklariga ko‘ra qanday turlarga bo‘linadi? ',
+            variant: [
+                {
+                    item: ' Qobiq, qobiq osti, chuqur fokusli. ',
+                    i: true
+                },
+                {
+                    item: 'Tektonik, vulkanik, o‘pirilish. ',
+                    i: false
+                },
+                {
+                    item: 'Mantiya, chuqur fokusli, qobiq osti. ',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob B. ',
+                    i: false
+                }
+            ]
+        },
+        {
+            answare: 'Rixter shkalasining o‘lchov birligi qaysi javobda to‘g‘ri ko‘rsatilgan ',
+            variant: [
+                {
+                    item: 'Magnituda',
+                    i: true
+                },
+                {
+                    item: 'Ball',
+                    i: false
+                },
+                {
+                    item: 'Nyuton',
+                    i: false
+                },
+                {
+                    item: 'To‘g‘ri javob B. ',
+                    i: false
                 }
             ]
         }
@@ -509,16 +1735,16 @@ export const AllTheme = [
         title: 'Kuchli zilzila-tabiiy ofat, uning  kelib chiqish sabablari'
     },
     {
-        title: 'ZILZILADAN OLDIN BAJARILADIGAN HARAKATLAR'
+        title: 'Zilziladan oldin bajariladigan harakatlar '
     },
     {
-        title: 'ZILZILA VAQTIDA BAJARILADIGAN HARAKATLAR'
+        title: 'Zilzila vaqtida bajariladigan harakatlar'
     },
     {
-        title: 'ZILZILADAN KEYIN BAJARILADIGAN TO‘G‘RI HARAKATLAR'
+        title: 'Zilziladan keyin bajariladigan to‘g‘ri harakatlar'
     },
     {
-        title: 'O‘zbekiston Respublikasining umumiy seysmik rayonlashtirish XARITASI '
+        title: 'O‘zbekiston Respublikasining umumiy seysmik rayonlashtirish xaritasi '
     },
     {
         title: 'Fuqarolaning zilzilaga tayyorgarlik darajasinini baxolash uchun testlar '

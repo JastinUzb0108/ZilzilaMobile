@@ -1,5 +1,7 @@
 package com.labprogram;
 
+import com.facebook.react.bridge.JSIModulePackage; // <- add
+import com.swmansion.reanimated.ReanimatedJSIModulePackage; // <- add
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;

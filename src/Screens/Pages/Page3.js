@@ -3,7 +3,7 @@ import { View } from 'react-native'
 
 import { AllData } from 'Mock'
 import Helper from 'Helper'
-import Config from 'Config'
+import { Transform } from 'Animation'
 
 const Page3 = ({ navigation }) => {
   return (
@@ -12,8 +12,8 @@ const Page3 = ({ navigation }) => {
       justifyContent: 'flex-start',
       alignItems: 'center'
     }}>
-      <Helper navLink="Page4" navigation={navigation} />
-      <Config data={AllData.page3} />
+      <Helper nav='Page2' navLink="Page4" navigation={navigation} />
+      <Transform data={AllData.page3} />
     </View>
   )
 }

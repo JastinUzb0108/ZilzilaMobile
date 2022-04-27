@@ -1,7 +1,7 @@
-import { ScrollView, StyleSheet, View, Dimensions, TouchableOpacity, Text } from 'react-native'
+import { ScrollView, StyleSheet, View, Dimensions, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useTheme } from 'styled-components'
-import { McText, McImage } from 'Components'
+import { McText } from 'Components'
 import { AllData } from 'Mock'
 
 const { width, height } = Dimensions.get('screen')
@@ -39,13 +39,11 @@ const Home = ({ navigation }) => {
                                         backgroundColor: theme.colors.success
                                     }
                                 ]}
+                                activeOpacity={0.8}
                             >
                                 <McText
                                     semi
                                     size={20}
-                                    style={{
-                                        textTransform: 'capitalize'
-                                    }}
                                 >
                                     {
                                         item.title
