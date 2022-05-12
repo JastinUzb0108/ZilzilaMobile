@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
 import { useTheme } from 'styled-components'
 import { Bars } from 'react-native-loader';
+import { GlobalState } from 'Config'
 
 import { McText, McBoldText } from 'Components'
 import { AllData } from 'Mock'
@@ -29,6 +30,8 @@ function random_elems(arr, count) {
 
 const Test = ({ navigation }) => {
 
+  const state = useContext(GlobalState)
+  const [dataContext] = state.data
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [answare, setAnsware] = useState([])
@@ -96,11 +99,9 @@ const Test = ({ navigation }) => {
               semi
               color={theme.colors.text1}
               size={18}
-              style={{
-                textAlign: 'center'
-              }}
             >
-              {answare.length} ta savoldan {score} ta javob berdingiz
+              {dataContext.mainContext.testContext.quesiton}: {answare.length} {'\n'}
+              {dataContext.mainContext.testContext.correct}: {score}
             </McText>
             <TouchableOpacity
               style={styles.button}
@@ -117,7 +118,7 @@ const Test = ({ navigation }) => {
                 size={18}
                 color='#000'
               >
-                Restart
+                {dataContext.mainContext.testContext.buttunText}
               </McText>
             </TouchableOpacity>
           </View>

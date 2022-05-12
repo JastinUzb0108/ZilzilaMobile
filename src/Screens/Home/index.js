@@ -1,13 +1,14 @@
+import React, { useContext } from 'react'
 import { ScrollView, StyleSheet, View, Dimensions, TouchableOpacity } from 'react-native'
-import React from 'react'
 import { useTheme } from 'styled-components'
 import { McText } from 'Components'
-import { AllData } from 'Mock'
+import { GlobalState } from 'Config'
 
 const { width, height } = Dimensions.get('screen')
 
-
 const Home = ({ navigation }) => {
+    const state = useContext(GlobalState)
+    const [data] = state.data
     const theme = useTheme()
     return (
         <View style={styles.container}>
@@ -26,7 +27,7 @@ const Home = ({ navigation }) => {
             </View>
             <ScrollView style={styles.bodyCOntainer}>
                 {
-                    AllData.AllTheme?.map((item, index) => {
+                    data.AllTheme?.map((item, index) => {
                         return (
                             <TouchableOpacity
                                 key={index}

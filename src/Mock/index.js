@@ -1,3 +1,9 @@
-import AllData from "./Data";
+import AllData from "./DataUz";
+import AllDataEng from "./DataEng";
+import AllDataRu from './DataRu'
 
-export {AllData}
+export {
+    AllData,
+    AllDataEng,
+    AllDataRu
+}

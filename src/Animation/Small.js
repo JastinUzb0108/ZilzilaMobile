@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, ScrollView } from 'react-native'
 import { useTheme } from 'styled-components'
+import YoutubeIframe from 'react-native-youtube-iframe'
 
 import { McText, McImage, McBoldText } from 'Components'
 
@@ -48,6 +49,19 @@ const Small = ({ data, Image }) => {
                     )
                 })
             }
+
+            {
+                data.youtube ?
+                    <YoutubeIframe
+                        videoId={data.youtube}
+                        height={300}
+                    />
+
+                    :
+                    null
+            }
+
+
         </ScrollView>
     )
 }
@@ -56,8 +70,8 @@ export default Small
 
 const styles = StyleSheet.create({
     textContainer: {
-    flex: 1,
-    paddingHorizontal: 12,
-    paddingBottom: 10
-}
+        flex: 1,
+        paddingHorizontal: 12,
+        paddingBottom: 10
+    }
 })

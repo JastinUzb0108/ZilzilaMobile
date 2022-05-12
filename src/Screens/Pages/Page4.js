@@ -1,11 +1,13 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import React, { useContext } from 'react'
+import { View } from 'react-native'
 
-import { AllData } from 'Mock'
+import { GlobalState } from 'Config'
 import Helper from 'Helper'
 import { Transform } from 'Animation'
 
 const Page4 = ({ navigation }) => {
+  const state = useContext(GlobalState)
+  const [data] = state.data
   return (
     <View style={{
       flex: 1,
@@ -13,7 +15,7 @@ const Page4 = ({ navigation }) => {
       alignItems: 'center'
     }}>
       <Helper nav='Page3' navLink="Page5" navigation={navigation} />
-        <Transform data={AllData.page4} boxAll={true} />
+        <Transform data={data.page4} boxAll={true} />
     </View>
   )
 }

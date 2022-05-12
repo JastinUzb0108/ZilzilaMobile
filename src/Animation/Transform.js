@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react'
-import { ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
+import { ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
 import { Transition, Transitioning } from 'react-native-reanimated'
 
 import { useTheme } from 'styled-components'
 import { McText, McBoldText } from 'Components'
 import Connection from './Connection'
+import YoutubeIframe from 'react-native-youtube-iframe'
 
 const transition = (
     <Transition.Together>
@@ -114,23 +115,39 @@ const Transform = ({ data }) => {
                                 </TouchableOpacity>
                                 {
                                     index === currentIndex && (
-                                        item.descContext?.map((itemDesc, indexDesc) => {
-                                            return (
-                                                <McText
-                                                    key={indexDesc}
-                                                    semi
-                                                    color={theme.colors.text1}
-                                                    style={{
-                                                        marginVertical: 3,
-                                                        paddingHorizontal: 5
-                                                    }}
-                                                >
-                                                    {
-                                                        itemDesc.text
-                                                    }
-                                                </McText>
-                                            )
-                                        })
+                                        <>
+                                            {
+                                                (
+                                                    item.descContext?.map((itemDesc, indexDesc) => {
+                                                        return (
+                                                            <McText
+                                                                key={indexDesc}
+                                                                semi
+                                                                color={theme.colors.text1}
+                                                                style={{
+                                                                    marginVertical: 3,
+                                                                    paddingHorizontal: 5
+                                                                }}
+                                                            >
+                                                                {
+                                                                    itemDesc.text
+                                                                }
+                                                            </McText>
+                                                        )
+                                                    })
+                                                )
+                                            }
+                                            {
+                                                item.youtube ? 
+                                                <YoutubeIframe 
+                                                    videoId={item.youtube}
+                                                    height={300}
+                                                />
+                                                :
+                                                null
+                                            }
+
+                                        </>
                                     )
                                 }
                             </ScrollView>

@@ -16,7 +16,8 @@ export const page1 = {
         {
             text: ' Yodingizda bo‘lsin, zilziladan oldin, zilzila vaqtida va zilziladan keyin o‘zini ruhan boshqara olgan odam, qo‘rquvni yengishi osonroq kechadi, jabrlanish ehtimoli ham kamroq bo‘ladi.'
         }
-    ]
+    ],
+    youtube: 'xX5i-mwyQ54'
 }
 
 export const page2 = {
@@ -55,7 +56,8 @@ export const page2 = {
                 {
                     text: 'Binolarda uch kunga mo‘ljallangan suv, oziq-ovqat va dori-darmonlar, ko‘chma radio, elektr chiroq, ular uchun batareykalar, sham, gugurt zahirasiga ega bo‘lishlari, shuningdek hujjatlar to‘plamini oldindan tayyorlab qo‘yishlari tavsiya etiladi. '
                 },
-            ]
+            ],
+            youtube: 'H-oXEAnAv2U'
         },
         {
             descTitle: '2.2. Ishlab chiqarish va xizmat ko‘rsatish sohasida faoliyat yuritadigan tashkilotlarda: ',
@@ -78,7 +80,8 @@ export const page2 = {
                 {
                     text: 'Rejali tarzda o‘tkaziladigan o‘quv mashqlari jarayonida yuqorida keltirilgan tadbirlarning barchasini ko‘zda tutish va amaliy o‘rganib borish tavsiya etiladi.  '
                 }
-            ]
+            ],
+            youtube: 'USrrhY8a3QM'
         },
         {
             descTitle: '2.3. Ishlab chiqarish va xizmat ko‘rsatish sohasida band bo‘lmaganlarni mahalla va qishloqlarda, shu jumladan jismoniy imkoniyati cheklangan shaxslar mavjud muassasalarda: ',
@@ -116,7 +119,8 @@ export const page2 = {
                 {
                     text: 'Mahalla yoki qishloqlarda (ovul) o‘tkaziladigan o‘quv mashqlarida zilzila bilan bog‘liq favqulodda vaziyatlarda harakat qilishga o‘rgatishga mo‘ljallangan tadbirlarda fuqarolarning faol ishtirok etishlari tavsiya etiladi. '
                 }
-            ]
+            ],
+            youtube: 'jm61QSFwULw'
         },
         {
             descTitle: '2.4. Sayyohlik agentliklarida yoki xorijdan fuqarolar jalb etilgan idora va tashkilotlarda: ',
@@ -133,7 +137,8 @@ export const page2 = {
                 {
                     text: 'sayyohlik agentliklarida, ular orqali xorijlik fuqarolar doimiy yoki vaqtinchalik bo‘lib turgan idora va tashkilotlarda  uch kunga mo‘ljallangan suv, oziq-ovqat va dori-darmonlar zahiralari, shuningdek ko‘chma radio, elektr chiroq, ular uchun batareykalar, shamlarni olib qo‘yish tavsiya etiladi. '
                 }
-            ]
+            ],
+            youtube: 'f9W4QEs7y-Y'
         },
     ]
 }
@@ -163,7 +168,8 @@ export const page3 = {
                 {
                     text: 'Liftdan foydalanmaslik tavsiya etiladi. '
                 }
-            ]
+            ],
+            youtube: ''
         },
         {
             descTitle: '3.2. Ishlab chiqarish va xizmat ko‘rsatish sohasida faoliyat yuritadigan tashkilotlarda: ',
@@ -195,7 +201,8 @@ export const page3 = {
                 {
                     text: 'Imkoniyat darajasida isitish asboblarini va ochiq o‘t manbalari o‘chirishga (gaz, elektr) harakat qilish tavsiya etiladi. '
                 }
-            ]
+            ],
+            youtube: ''
         },
         {
             descTitle: '3.3. Ishlab chiqarish va xizmat ko‘rsatish sohasida band bo‘lmaganlarni mahalla va qishloqlarda, shu jumladan jismoniy imkoniyati cheklangan shaxslar mavjud muassasalarda: ',
@@ -213,7 +220,8 @@ export const page3 = {
                     text: 'Xurkib ketgan uy hayvonlari zarar bermasligi uchun, molxonalar yonida turmaslik tavsiya etiladi. '
                 },
 
-            ]
+            ],
+            youtube: ''
         },
         {
             descTitle: '3.4. Sayyohlik agentliklarida yoki xorijdan fuqarolar jalb etilgan idora va tashkilotlarda: ',
@@ -230,7 +238,8 @@ export const page3 = {
                 {
                     text: 'Yer silkinayotgan vaqtda avtomobilda bo‘lganda yuqori qavatli binolar, elektr simi, tik yonbag‘irlar, ko‘priklar, benzin quyish shoxobchalari, daryo o‘zanidan uzoqroq joylarda mashinani to‘xtatish tavsiya etiladi. '
                 },
-            ]
+            ],
+            youtube: ''
         }
     ],
     desc2: [
@@ -1748,17 +1757,59 @@ export const AllTheme = [
     },
     {
         title: 'Fuqarolaning zilzilaga tayyorgarlik darajasinini baxolash uchun testlar '
-    },
+    }
 ]
 
-const AllData = {
+export const mainContext = {
+    nav: [
+        'Home',
+        'Test',
+        'Settings'
+    ],
+    testContext: {
+        quesiton: 'Number of question',
+        correct: 'Correct answers',
+        buttunText: 'Restart'
+    },
+    settings: {
+        languageContext: 'Select language',
+        themeContext: 'Select theme mode',
+        data: [
+            {
+                name: 'uzb',
+                title: 'Uzbek'
+            },
+            {
+                name: 'ru',
+                title: 'Russion'
+            },
+            {
+                name: 'eng',
+                title: 'English'
+            }
+        ],
+        themeMode: [
+            {
+                title: 'Dark theme',
+                mode: 'dark'
+            },
+            {
+                title: 'Light theme',
+                mode: 'light'
+            }
+        ]
+    }
+}
+
+const AllDataEng = {
     page1,
     page2,
     page3,
     page4,
     page5,
     page6,
-    AllTheme
+    AllTheme,
+    mainContext
 }
 
-export default AllData
+export default AllDataEng

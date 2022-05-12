@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { useTheme } from "styled-components";
+import { GlobalState } from 'Config'
 
 import {
     Home,
@@ -12,6 +13,8 @@ import { McVectorIcon } from 'Components'
 const Tab = createMaterialBottomTabNavigator()
 
 const TabStacks = ({ params }) => {
+    const state = useContext(GlobalState)
+    const [data] = state.data
     const theme = useTheme()
     return (
         <Tab.Navigator
@@ -25,7 +28,7 @@ const TabStacks = ({ params }) => {
                 name="Home"
                 component={Home}
                 options={{
-                    tabBarLabel: 'Home',
+                    tabBarLabel: `${data.mainContext.nav[0]}`,
                     tabBarIcon: ({ color }) => (
                         <McVectorIcon type='Ionicons' name="ios-home" color={color} size={26} />
                     )
@@ -36,7 +39,7 @@ const TabStacks = ({ params }) => {
                 component={Test}
                 options={{
                     tabBarColor: '#FFAC30',
-                    tabBarLabel: 'Test',
+                    tabBarLabel: `${data.mainContext.nav[1]}`,
                     tabBarIcon: ({ color }) => (
                         <McVectorIcon type='MaterialCommunityIcons' name="ab-testing" color={color} size={26} />
                     )
@@ -47,7 +50,7 @@ const TabStacks = ({ params }) => {
                 name="Setting"
                 component={Setting}
                 options={{
-                    tabBarLabel: 'Setting',
+                    tabBarLabel: `${data.mainContext.nav[2]}`,
                     tabBarIcon: ({ color }) => (
                         <McVectorIcon type='Ionicons' name="settings-sharp" color={color} size={26} />
                     )

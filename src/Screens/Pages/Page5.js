@@ -1,15 +1,17 @@
+import React, { useContext } from 'react'
 import { StyleSheet, View } from 'react-native'
-import React from 'react'
 import Helper from 'Helper'
-import { AllData } from 'Mock'
+import { GlobalState } from 'Config'
 import { Small } from 'Animation'
 import { Images } from 'Constants'
 
 const Page5 = ({ navigation }) => {
+  const state = useContext(GlobalState)
+  const [data] = state.data
   return (
     <View style={styles.container}>
       <Helper nav='Page4' navLink="Page6" navigation={navigation} />
-      <Small data={AllData.page5} Image={Images.img15} />
+      <Small data={data.page5} Image={Images.img15} />
     </View>
   )
 }
