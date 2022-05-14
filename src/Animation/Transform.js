@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
+import { ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
 import { Transition, Transitioning } from 'react-native-reanimated'
 
 import { useTheme } from 'styled-components'
@@ -20,6 +20,7 @@ const Transform = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(null)
     const ref = useRef()
     const theme = useTheme()
+    const [youtube, setYutube] = useState(false)
 
     return (
         <ScrollView
@@ -138,13 +139,50 @@ const Transform = ({ data }) => {
                                                 )
                                             }
                                             {
-                                                item.youtube ? 
-                                                <YoutubeIframe 
-                                                    videoId={item.youtube}
-                                                    height={300}
-                                                />
-                                                :
-                                                null
+                                                youtube && item.youtube ?
+                                                    <View
+                                                        style={{
+                                                            width: '100%',
+                                                            height: 218,
+                                                            backgroundColor: '#000',
+                                                            marginVertical: 10
+                                                        }}
+                                                    >
+                                                        <YoutubeIframe
+                                                            videoId={item.youtube}
+                                                            height={218}
+                                                        />
+                                                    </View>
+                                                    :
+                                                    null
+                                            }
+                                            {
+                                                item.youtube ?
+                                                    <TouchableOpacity
+                                                        style={{
+                                                            width: '100%',
+                                                            height: 55,
+                                                            alignItems: 'center',
+                                                            justifyContent: 'center',
+                                                            backgroundColor: 'red',
+                                                            marginVertical: 10,
+                                                            borderRadius: 10
+                                                        }}
+
+                                                        onPress={() => {
+                                                            setYutube(!youtube)
+                                                        }}
+                                                    >
+                                                        <McBoldText
+                                                            size={18}
+                                                            color='#fff'
+
+                                                        >
+                                                            Youtube
+                                                        </McBoldText>
+                                                    </TouchableOpacity>
+                                                    :
+                                                    null
                                             }
 
                                         </>

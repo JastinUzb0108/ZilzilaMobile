@@ -120,7 +120,7 @@ export const page2 = {
                     text: 'Mahalla yoki qishloqlarda (ovul) o‘tkaziladigan o‘quv mashqlarida zilzila bilan bog‘liq favqulodda vaziyatlarda harakat qilishga o‘rgatishga mo‘ljallangan tadbirlarda fuqarolarning faol ishtirok etishlari tavsiya etiladi. '
                 }
             ],
-            youtube: 'nO2vAnovDoI '
+            youtube: 'nO2vAnovDoI'
         },
         {
             descTitle: '2.4. Sayyohlik agentliklarida yoki xorijdan fuqarolar jalb etilgan idora va tashkilotlarda: ',
@@ -248,7 +248,6 @@ export const page3 = {
             text: 'Zilzila vaqtida sarosimaga tushmaslikka harakat qilish, osoyishtalik va xotirjamlikni saqlash juda muhim. Yer qimirlayotganda xotirjamlik va aql bilan ish ko‘rish talofatsiz chiqishga imkon beradi. Bundan tashqari atrofingizdagi odamlar sizdan o‘rnak olishadi va bu ular uchun foydali bo‘lishi mumkin. '
         }
     ],
-    youtube: 'JSyz0zjHH5c'
 }
 
 export const page4 = {

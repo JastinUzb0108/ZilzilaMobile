@@ -86,7 +86,7 @@ const Test = ({ navigation }) => {
       flex: 1,
       alignItems: 'center'
     }}>
-      <Helper navLink="Home" navigation={navigation} />
+      <Helper nav='Home'  navLink="Setting" navigation={navigation} />
 
       {
         showScore ? (

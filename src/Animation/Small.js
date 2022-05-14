@@ -1,5 +1,5 @@
-import React from 'react'
-import { StyleSheet, ScrollView } from 'react-native'
+import React, { useState } from 'react'
+import { StyleSheet, ScrollView, View, TouchableOpacity } from 'react-native'
 import { useTheme } from 'styled-components'
 import YoutubeIframe from 'react-native-youtube-iframe'
 
@@ -7,6 +7,7 @@ import { McText, McImage, McBoldText } from 'Components'
 
 const Small = ({ data, Image }) => {
     const theme = useTheme()
+    const [youtube, setYutube] = useState(false)
     return (
         <ScrollView style={styles.textContainer}>
             <McImage
@@ -51,16 +52,51 @@ const Small = ({ data, Image }) => {
             }
 
             {
-                data.youtube ?
-                    <YoutubeIframe
-                        videoId={data.youtube}
-                        height={300}
-                    />
-
+                youtube && data.youtube ?
+                    <View
+                        style={{
+                            width: '100%',
+                            height: 218,
+                            backgroundColor: '#000',
+                            marginVertical: 10
+                        }}
+                    >
+                        <YoutubeIframe
+                            videoId={data.youtube}
+                            height={218}
+                        />
+                    </View>
                     :
                     null
             }
+            {
+                data.youtube ?
+                    <TouchableOpacity
+                        style={{
+                            width: '100%',
+                            height: 55,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: 'red',
+                            marginVertical: 10,
+                            borderRadius: 10
+                        }}
 
+                        onPress={() => {
+                            setYutube(!youtube)
+                        }}
+                    >
+                        <McBoldText
+                            size={18}
+                            color='#fff'
+
+                        >
+                            Youtube
+                        </McBoldText>
+                    </TouchableOpacity>
+                    :
+                    null
+            }
 
         </ScrollView>
     )

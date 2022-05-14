@@ -138,7 +138,7 @@ export const page2 = {
                     text: 'sayyohlik agentliklarida, ular orqali xorijlik fuqarolar doimiy yoki vaqtinchalik bo‘lib turgan idora va tashkilotlarda  uch kunga mo‘ljallangan suv, oziq-ovqat va dori-darmonlar zahiralari, shuningdek ko‘chma radio, elektr chiroq, ular uchun batareykalar, shamlarni olib qo‘yish tavsiya etiladi. '
                 }
             ],
-            youtube: 'LBp-oFoCclU '
+            youtube: 'LBp-oFoCclU'
         },
     ],
 }
@@ -273,7 +273,7 @@ export const page4 = {
                     text: 'Vayron bo‘lgan binolar yoniga bormaslik, ularning ichiga kirmaslik, shaxsiy xavfsizlikni ta’minlash tavsiya etiladi. '
                 },
             ],
-            youtube: 'd335g-nUxfU '
+            youtube: 'd335g-nUxfU'
         },
         {
             descTitle: '4.2. Ishlab chiqarish va xizmat ko‘rsatish sohasida faoliyat yuritadigan tashkilotlarda: ',
